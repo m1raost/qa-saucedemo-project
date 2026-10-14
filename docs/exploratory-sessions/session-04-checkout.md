@@ -60,3 +60,16 @@ Because of this, the form cannot be completed, and the overview page could not b
 - Should the fields accept special characters?
 - Should the fields accept spaces only? This works for all users, including standard_user.
 - Should an order with an empty cart be completed with "Thank you for your order!",
+
+## Ideas for test cases
+- Every field shows its own error message when left empty.
+- The form cannot be submitted when a required field is empty.
+- Each field accepts typing and enters text only into itself.
+- Form validation with numbers, letters, special characters, spaces only and long text 
+  (expected behaviour to be confirmed).
+- The item total equals the sum of the item prices, and the total equals item total + tax.
+- The Finish button completes the order and empties the cart badge.
+- Back Home returns to the inventory page.
+- The Cancel button works on the Your Information and Overview pages.
+- Checkout pages cannot be opened by URL without login.
+- Checkout with an empty cart (expected behaviour to be confirmed).
