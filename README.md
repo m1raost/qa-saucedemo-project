@@ -5,7 +5,7 @@ Manual and automated testing of https://www.saucedemo.com
 ## Status
 - [x] Application analysis (mind map)
 - [x] Exploratory testing sessions
-- [ ] Test plan
+- [x] Test plan
 - [ ] Test cases
 - [ ] Bug reports
 - [ ] UI automation (Java, Selenium, TestNG)
@@ -18,3 +18,4 @@ Manual and automated testing of https://www.saucedemo.com
     - [Session 03 – Cart](docs/exploratory-sessions/session-03-cart.md)
     - [Session 04 – Checkout](docs/exploratory-sessions/session-04-checkout.md)
     - [Session 05 – Menu](docs/exploratory-sessions/session-05-menu.md)
+- [Test plan](docs/test-plan.md)
