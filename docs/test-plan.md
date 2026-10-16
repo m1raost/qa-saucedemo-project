@@ -47,6 +47,7 @@ An empty cart shows no number on the badge.
 - **AR-LOGIN-10:** A username with spaces before or after it is not accepted (assumption).
 - **AR-LOGIN-11:** Username and password fields accept a maximum of 50 characters (assumption).
 - **AR-LOGIN-12:** The inventory page cannot be opened by URL without login, or with the Back button after logout.
+- **AR-LOGIN-13:** A password with spaces before or after it is not accepted (assumption).
 
 ### Inventory
 - **AR-INV-01:** The image, name, price and description of a product are the same
