@@ -202,7 +202,7 @@ secret_sauce
 - Mind map of the application – docs/mind-map.png
 - Exploratory session notes – docs/exploratory-sessions/
 - Test plan – docs/test-plan.md
-- Test cases – docs/test-cases.md
+- Test cases – docs/test-cases/
 - Bug reports – GitHub Issues
 - UI automation framework (Java, Selenium, TestNG, Maven) – src/
 - Test execution reports (Allure)
