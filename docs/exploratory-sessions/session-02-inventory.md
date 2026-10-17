@@ -26,7 +26,6 @@ for each user I sorted by all 4 options, added and removed all items, and opened
 - Adding and removing items does not work correctly: 
   some items cannot be added again and some cannot be removed.
 - None of the sorting options work.
-- The user is logged out after going to the cart page.
 
 ### performance_glitch_user
 - Pages take a long time to load after login, after pressing the Back button and when sorting.
@@ -56,6 +55,9 @@ for each user I sorted by all 4 options, added and removed all items, and opened
 ## Questions
 - Is the logout of problem_user after opening the cart caused by a session timeout or by a defect?
   Needs to be checked again in the cart session.
+- Update 16.10.2026: Retested. 
+  The logout happened after ~10 minutes without activity on every page.
+  This is a session timeout, not a defect.
 
 ## Ideas for test cases
 - The product picture is the same on the inventory page and the product page.
