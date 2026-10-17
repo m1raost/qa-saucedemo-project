@@ -33,6 +33,7 @@ An empty cart shows no number on the badge.
 - **AR-GEN-02:** The cart badge is in the correct position on every page, for every user.
 - **AR-GEN-03:** The menu icon lines are straight on every page, for every user.
 - **AR-GEN-04:** The user is not logged out unexpectedly while using the application.
+- **AR-GEN-05:** The session ends after 10 minutes of inactivity (assumption).
 
 ### Login
 - **AR-LOGIN-01:** A user with valid credentials is logged in and redirected to the inventory page.
