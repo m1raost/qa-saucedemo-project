@@ -83,6 +83,8 @@ An empty cart shows no number on the badge.
 - **AR-CHK-09:** Back Home returns to the inventory page.
 - **AR-CHK-10:** The Cancel button works on the Your Information and Overview pages.
 - **AR-CHK-11:** Checkout pages cannot be opened by URL without login.
+- **AR-CHK-12:** First Name and Last Name accept a maximum of 50 characters (assumption). 
+- **AR-CHK-13:** Postal Code accepts a maximum of 10 characters (assumption).
 
 ### Menu
 - **AR-MENU-01:** All Items returns to the inventory page from every page.
