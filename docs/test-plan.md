@@ -97,6 +97,7 @@ An empty cart shows no number on the badge.
 - **AR-MENU-07:** When Reset App State is used during checkout,
   the order cannot be completed with the removed items (assumption).
 - **AR-MENU-08:** The footer social media icons open the correct pages.
+- **AR-MENU-09:** The menu opens with the menu icon and closes with X.
 
 
 
