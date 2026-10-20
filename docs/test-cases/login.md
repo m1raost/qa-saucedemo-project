@@ -50,7 +50,7 @@
     1. Enter the username.
     2. Enter the password.
     3. Click Login.
-- **Expected result:** Usernames with Upper-case letters are not accepted.
+- **Expected result:** - **Expected result:** Usernames with upper-case letters are not accepted. Error message: "Epic sadface: Username and password do not match any user in this service"
 - **Automated:** Planned
 
 
@@ -70,7 +70,7 @@
    1. Enter the username.
    2. Enter the password.
    3. Click Login.
-- **Expected result:** Password with upper-case letters is not accepted.
+- **Expected result:** A password with upper-case letters is not accepted. Error message: "Epic sadface: Username and password do not match any user in this service"
 - **Automated:** Planned
 
 
@@ -200,7 +200,7 @@
    1. Enter the username.
    2. Enter the password.
    3. Click Login.  
-- **Expected result:** A username with spaces before or after it is not accepted.
+- **Expected result:** A username with spaces before or after it is not accepted. Error message: "Epic sadface: Username and password do not match any user in this service"
 - **Automated:** Planned
 
 
@@ -220,7 +220,7 @@
     1. Enter the username.
     2. Enter the password.
     3. Click Login.
-- **Expected result:** A password with spaces before or after it is not accepted.
+- **Expected result:** A password with spaces before or after it is not accepted. Error message: "Epic sadface: Username and password do not match any user in this service"
 - **Automated:** Planned
 
 
@@ -230,11 +230,9 @@
 - **Type:** Positive
 - **Preconditions:** The Login page is open.
 - **Test data:** Username is: UserAccountIdentificationNumberZeroZeroZeroZeroOk (49 characters)
-  Password is: secret_sauce
 - **Steps:**
-   1. Enter the username.
-   2. Enter the password.
-   3. Click Login.
+   1. Enter the value from Test data in the Username field.
+   2. Check how many characters are in the field (DevTools Console: `document.querySelector('#user-name').value.length`).
 - **Expected result:** All characters are entered in the field.
 - **Automated:** Planned
 
@@ -246,11 +244,9 @@
 - **Type:** Positive
 - **Preconditions:** The Login page is open.
 - **Test data:** Username is: UserAccountIdentificationNumberZeroZeroZeroZeroOut (50 characters)
-  Password is: secret_sauce
 - **Steps:**
-    1. Enter the username.
-    2. Enter the password.
-    3. Click Login.
+   1. Enter the value from Test data in the Username field.
+   2. Check how many characters are in the field (DevTools Console: `document.querySelector('#user-name').value.length`).
 - **Expected result:** All 50 characters are entered in the field.
 - **Automated:** Planned
 
@@ -261,11 +257,9 @@
 - **Type:** Negative
 - **Preconditions:** The Login page is open.
 - **Test data:** Username is: UserAccountIdentificationNumberZeroZeroZeroZeroOver (51 characters)
-  Password is: secret_sauce
 - **Steps:**
-    1. Enter the username.
-    2. Enter the password.
-    3. Click Login.
+   1. Enter the value from Test data in the Username field.
+   2. Check how many characters are in the field (DevTools Console: `document.querySelector('#user-name').value.length`).
 - **Expected result:** Only the first 50 characters are entered, the 51st character is not accepted.
 - **Automated:** Planned
 
@@ -276,17 +270,10 @@
 - **Priority:** Medium
 - **Type:** Positive 
 - **Preconditions:** The Login page is open.
-- **Test data:** Password is: ThisIsVeryLongPasswordWithAbsolutelyNoNumbersInIt (49 characters), for each user:
-  - standard_user
-  - locked_out_user
-  - problem_user
-  - performance_glitch_user
-  - error_user
-  - visual_user
-- **Steps:** 
-   1. Enter the username.
-   2. Enter the password.
-   3. Click Login.
+- **Test data:** Password is: ThisIsVeryLongPasswordWithAbsolutelyNoNumbersInIt (49 characters)
+- **Steps:**
+   1. Enter the value from Test data in the Password field.
+   2. Check how many characters are in the field (DevTools Console: `document.querySelector('#password').value.length`).
 - **Expected result:** All characters are entered in the field.
 - **Automated:** Planned
 
@@ -297,17 +284,10 @@
 - **Priority:** Medium
 - **Type:** Positive
 - **Preconditions:** The Login page is open.
-- **Test data:** Password is: ThisIsVeryLongPasswordWithAbsolutelyNoNumbersInItX (50 characters), for each user:
-    - standard_user
-    - locked_out_user
-    - problem_user
-    - performance_glitch_user
-    - error_user
-    - visual_user
+- **Test data:** Password is: ThisIsVeryLongPasswordWithAbsolutelyNoNumbersInItX (50 characters)
 - **Steps:**
-    1. Enter the username.
-    2. Enter the password.
-    3. Click Login.
+   1. Enter the value from Test data in the Password field.
+   2. Check how many characters are in the field (DevTools Console: `document.querySelector('#password').value.length`).
 - **Expected result:** All 50 characters are entered in the field.
 - **Automated:** Planned
 
@@ -318,17 +298,10 @@
 - **Priority:** Medium
 - **Type:** Negative
 - **Preconditions:** The Login page is open.
-- **Test data:** Password is: ThisIsVeryLongPasswordWithAbsolutelyNoNumbersInItXY (51 characters), for each user:
-    - standard_user
-    - locked_out_user
-    - problem_user
-    - performance_glitch_user
-    - error_user
-    - visual_user
+- **Test data:** Password is: ThisIsVeryLongPasswordWithAbsolutelyNoNumbersInItXY (51 characters)
 - **Steps:**
-    1. Enter the username.
-    2. Enter the password.
-    3. Click Login.
+   1. Enter the value from Test data in the Password field.
+   2. Check how many characters are in the field (DevTools Console: `document.querySelector('#password').value.length`).
 - **Expected result:** Only the first 50 characters are entered, the 51st character is not accepted.
 - **Automated:** Planned
 
@@ -343,6 +316,7 @@
    1. Enter URL directly to the address bar.
    2. Press Enter.
 - **Expected result:** The inventory page cannot be opened by URL without login.
+- Error message is shown: "Epic sadface: You can only access '/inventory.html' when you are logged in".
 - **Automated:** Planned
 
 
