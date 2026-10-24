@@ -15,6 +15,9 @@ assignees: ""
 ## Test case
 [TC-ID] (requirement [AR-ID])
 
+## Related
+[other Issue numbers connected to this bug – otherwise delete this section]
+
 ## Users
 [users where the bug happens]
 
