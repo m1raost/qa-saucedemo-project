@@ -22,7 +22,7 @@ exploratory testing, assumed requirements, test cases, bug reports, test reports
   and load testing it without permission is not allowed. Slow loading is only reported as an observation.
 - **Security testing** – no permission to test a third-party application for security issues.
 - **Backend / API** – the application runs in the browser and has no accessible backend API.
-  API testing is done in a separate project.
+  API testing is done in a [Restful-Booker API Tests](https://github.com/m1raost/restful-booker-api-tests).
 - **Mobile devices** – testing is done on desktop browsers only.
 
 ## 3. Assumed Requirements
