@@ -7,7 +7,8 @@ Manual and automated testing of https://www.saucedemo.com
 - [x] Exploratory testing sessions
 - [x] Test plan
 - [x] Test cases
-- [ ] Bug reports
+- [x] Test execution: (in progress: Login and Inventory done)
+- [x] Bug reports (in progress) – see [GitHub Issues](https://github.com/m1raost/qa-saucedemo-project/issues)
 - [ ] UI automation (Java, Selenium, TestNG)
 
 ## Docs
@@ -25,3 +26,10 @@ Manual and automated testing of https://www.saucedemo.com
   - [Cart](docs/test-cases/cart.md)
   - [Checkout](docs/test-cases/checkout.md)
   - [Menu](docs/test-cases/menu.md)
+- Test execution (Run 01):
+  - [Login](docs/test-execution/run-01/login.md)
+  - [Inventory](docs/test-execution/run-01/inventory.md)
+- [Bug reports (GitHub Issues)](https://github.com/m1raost/qa-saucedemo-project/issues)
+
+## Related projects
+- [Restful-Booker API Tests](https://github.com/m1raost/restful-booker-api-tests) – API test automation with Java, RestAssured and TestNG
