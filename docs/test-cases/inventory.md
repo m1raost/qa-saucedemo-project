@@ -299,9 +299,9 @@
 - **Steps:**
   1. Write down the prices of all products.
   2. Reload the page and compare the prices.
-  3. Click the name of any product.
+  3. Click the name of any product and write down its price on the product page.
   4. Click the browser Back button and compare the prices.
-  5. Click the browser Forward button and compare the price on the product page.
+  5. Click the browser Forward button and compare the price with step 3.
 - **Expected result:** All prices stay the same after reload and after Back/Forward navigation.
 - **Automated:** Planned
 
