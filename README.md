@@ -7,7 +7,7 @@ Manual and automated testing of https://www.saucedemo.com
 - [x] Exploratory testing sessions
 - [x] Test plan
 - [x] Test cases
-- [x] Test execution: (in progress: Login and Inventory done)
+- [x] Test execution: (in progress: Login, Inventory and Cart done)
 - [x] Bug reports (in progress) – see [GitHub Issues](https://github.com/m1raost/qa-saucedemo-project/issues)
 - [ ] UI automation (Java, Selenium, TestNG)
 
