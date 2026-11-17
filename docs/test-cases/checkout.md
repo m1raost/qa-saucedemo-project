@@ -492,3 +492,30 @@ Your Information page is open.
 - **Expected result:** With 9 and 10 characters, all characters are entered. With 11 characters,
 only the first 10 are entered.
 - **Automated:** Planned
+
+
+### TC-CHK-20: Form with empty fields is not submitted with the Return key
+- **Requirement:** AR-CHK-02
+- **Priority:** High
+- **Type:** Negative
+- **Preconditions:** The user from Test data is logged in, the product from Test data is in the cart and the Checkout: Your Information page is open.
+- **Test data:**
+    - Users (password secret_sauce):
+        - standard_user
+        - problem_user
+        - performance_glitch_user
+        - error_user
+        - visual_user
+    - Product: Sauce Labs Backpack
+    - Checkout information (one set per run):
+        1. All fields empty
+        2. First Name: *(empty)*, Last Name: Smith, Postal Code: 10115
+        3. First Name: John, Last Name: *(empty)*, Postal Code: 10115
+        4. First Name: John, Last Name: Smith, Postal Code: *(empty)*
+- **Steps:**
+    1. Enter the values from the first set.
+    2. Click into the First Name field.
+    3. Press Return.
+    4. Repeat for each set.
+- **Expected result:** The form is not submitted. The error message for the first empty field is shown and the user stays on the Your Information page.
+- **Automated:** Planned
