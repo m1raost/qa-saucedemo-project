@@ -98,12 +98,12 @@
 
 ### TC-LOGIN-10: Readability of error message
 - **Results:**
-  - standard_user: Fail
-  - locked_out_user: Fail
-  - problem_user: Fail
-  - performance_glitch_user: Fail
-  - error_user: Fail
-  - visual_user: Fail
+  - standard_user: Fail – the error message overflows its container (#1)
+  - locked_out_user: Fail – the error message overflows its container (#1)
+  - problem_user: Fail – the error message overflows its container (#1)
+  - performance_glitch_user: Fail – the error message overflows its container (#1)
+  - error_user: Fail – the error message overflows its container (#1)
+  - visual_user: Fail – the error message overflows its container (#1)
 - **Bug:** #1
 - **Notes:** –
 
@@ -148,7 +148,8 @@
 
 ### TC-LOGIN-15: Username field maximum length (Over Max Limit)
 - **Results:**
-  - 51 characters: Fail
+  - 51 characters: Fail - Username and Password fields accept more than 50 characters
+    (#2)
 - **Bug:** #2
 - **Notes:** –
 
@@ -169,7 +170,8 @@
 
 ### TC-LOGIN-18: Password field maximum length (Over Max Limit)
 - **Results:**
-  - 51 characters: Fail
+  - 51 characters: Fail - Username and Password fields accept more than 50 characters
+    (#2)
 - **Bug:** #2
 - **Notes:** –
 
